@@ -5,11 +5,26 @@
         align-items: center;
         background-color: black;
         color: white;
+        text-align: center;
       }
       .fullscreen {
         width: 100%;
         height: 100%;
         display: flex;
+        justify-content: center; 
+        align-items: center;
+      }
+      .divider {
+        width: 100%;
+        height: 30%;
+      }
+      img {
+        width: 60%;
+        left: 10%;
+      }
+      .content {
+        display: flex;
+        margin-left: 2em;
         justify-content: center; 
         align-items: center;
       }
@@ -20,6 +35,12 @@
         justify-content: center; 
         align-items: center;
       }
+      .storyboard {
+        width: 18em;
+        height: auto;
+        margin: 0.3em;
+        display: block;
+      }
       .title {
         width: 100%;
         text-align: center;
@@ -29,8 +50,55 @@
         text-align: center;
         margin-top: 3em;
       }
+      h2 {
+        font-size: 3em;
+      }
+      h3 {
+        font-size: 1.7em;
+      }
+      p {
+        font-size: 1.1em;
+      }
+      li {
+        text-transform: capitalize;
+        text-align: left;
+      }
       
     </style>
+    <style type="text/css">  
+      /** 重置浏览器默认标签样式 */   
+      /* body,ul,li{margin:0;padding:0;}    */
+      .xttblog{   
+       width: 74em;   
+       height: 170px;   
+       /* margin-top:50px;    */
+       /* margin-left: auto;    */
+       /* margin-right: auto;    */
+      }   
+      .box{margin-left: 5px;margin-top: 5px;list-style-type:none;}   
+      .box:after{   
+       content: ".";   
+       display: block;   
+       line-height: 0;   
+       width:0;   
+       height: 0;   
+       clear: both;   
+       visibility: hidden;   
+       overflow: hidden;   
+      }   
+      .box li{float:left;line-height: 230px;}   
+      .box li img,.box li{   
+       display:block;   
+       border: 0.5em solid black;   
+       width: 20em;   
+       height: 10em;   
+       text-align: center;   
+       margin-left: -5px;   
+       margin-top: -5px;   
+       position: relative;   
+       z-index: 1;   
+      }   
+      </style>  
   </head>
   <body>
     <div class="fullscreen">
@@ -43,16 +111,314 @@
           <br>
           <br>
           <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          Shing Hwang     3/11/2023
         </h3>
+        <p>
+          Shing Hwang     3/11/2023
+        </p>
       </div>
     </div>
+
+
+
+
+    <div class="content">
+      <img src="https://s2.loli.net/2022/03/12/pGYwKyzf4BumeVx.png" />
+      <div>
+        <div style="margin: 5em; width: 80%;">
+          <h3>Research</h3>
+          <p>6 team members* <br>
+            6 perspectives <br>
+            5 suburbs <br>
+            3 interviews</p>
+        </div>
+        <div style="margin: 5em; width: 80%;">
+          <h3>Synthesis</h3>
+          <p>CLA <br>
+            SteepX <br>
+            KJ <br>
+            Synthesis <br>
+          </p>
+          <br>
+          <br>
+          <p style="font-size: 0.4em; color: darkgray;">Aravind Aanand, Enea Senesi, Lakshmy Narayanan, Luke Pezzimenti, Hardik Davara</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="divider"></div>
+
+    <h2 class="title" style="height: 20%;">How to describe Monterey Park?</h2>
+    <div class="content">
+      <img style="height: 30em; width: auto;" src="https://s2.loli.net/2022/03/12/MoVEld6AzkvSHq2.jpg" />
+      <div style="margin: 5em; width: 23%;">
+        <ul style="font-size: 1.6em;">
+          <li>cultural intersection</li>
+          <li>transport intersection</li>
+          <li>urban connectivity</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="content">
+      <img style="height: 30em; width: auto;" src="https://s2.loli.net/2022/03/12/htcbgAJ1yRxBnQP.jpg" />
+      <div style="margin: 5em; width: 23%;">
+        <ul style="font-size: 1.6em; justify-content: left;">
+          <li>local business</li>
+          <li>many parks</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="content">
+      <img style="height: 30em; width: 31.5em; object-fit: cover;" src="https://images.squarespace-cdn.com/content/v1/5681acc70ab377a994804ee1/1525376001840-CZKSCQR0TL372BRATH87/11995327.JPG" />
+      <div style="margin: 5em; width: 23%;">
+        <ul style="font-size: 1.6em;">
+          <li>asian demographic</li>
+          <li>asian tradition</li>
+          <li>high density</li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+
+
+
+    <div class="divider" style="height: 50%;"></div>
+
+    <h2 class="title" style="height: 20%;">What will the future look like in 2050s?</h2>
+    <div class="content">
+      <img style="height: 15em; width: auto; margin: 0.5em;" src="https://s2.loli.net/2022/03/12/72bEdGczKxuPAf5.jpg" />
+      <img style="height: 15em; width: auto; margin: 0.5em;" src="https://s2.loli.net/2022/03/12/fdXN2mp7hHSEuAw.jpg" />
+      <div style="margin: 3em; width: 40%;">
+        <h3 style="text-align: left;">Service Network</h3>
+        <ul style="font-size: 1.1em;">
+          <li>Semantic web</li>
+          <li>Interpreted information</li>
+          <li>Highly automated physical industry</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="content">
+      <img style="height: 15em; width: auto; margin: 0.5em;" src="https://s2.loli.net/2022/03/12/bK9dl4wZQ8CGrcf.jpg" />
+      <img style="height: 15em; width: auto; margin: 0.5em;" src="https://s2.loli.net/2022/03/12/rIbsR4SzXy2VJ9g.jpg" />
+      <div style="margin: 3em; width: 40%;">
+        <h3 style="text-align: left;">Motivated by Sparkles</h3>
+        <ul style="font-size: 1.1em;">
+          <li>Standing on the shoulders of giant computers</li>
+          <li>Value transition</li>
+          <li>Self awareness rejuvenation</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="content">
+      <img style="height: 15em; width: 40em; margin: 0.5em;" src="https://origami-book.com/user_data/images/upload/building/ll/20150502100848_308273375.jpg" />
+      <img style="height: 15em; width: 40em; margin: 0.5em;" src="https://www.gardeningeye.com/wp-content/uploads/2021/10/1635656025-Zaje%CC%A8cia-we-Wspo%CC%81lnym-Ogrodzie-z-Paulina%CC%A8-Jeziorek-foto-Katarzyna-Cudzilo.jpg" />
+      <div style="margin: 3em; width: 40%;">
+        <h3 style="text-align: left;">From Me to We</h3>
+        <ul style="font-size: 1.1em;">
+          <li>Lead by example</li>
+          <li>Owner attitude</li>
+          <li>Shared economy</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="divider"></div>
+
+    <h2 class="title" style="height: 20%;">How will those lead Monterey Park in the future?</h2>
+    <div class="content">
+      <!-- <div class="xttblog">  
+        <ul class="box">  
+         <li><img src="https://s2.loli.net/2022/03/12/MoVEld6AzkvSHq2.jpg"/></li>  
+         <li><img src="https://s2.loli.net/2022/03/12/htcbgAJ1yRxBnQP.jpg"/></li>  
+         <li><img src="https://images.squarespace-cdn.com/content/v1/5681acc70ab377a994804ee1/1525376001840-CZKSCQR0TL372BRATH87/11995327.JPG"/></li>  
+         <li><img src="https://s2.loli.net/2022/03/12/72bEdGczKxuPAf5.jpg"/></li>  
+         <li><img src="https://s2.loli.net/2022/03/12/fdXN2mp7hHSEuAw.jpg"/></li>  
+         <li><img src="https://s2.loli.net/2022/03/12/bK9dl4wZQ8CGrcf.jpg"/></li>  
+         <li><img src="https://s2.loli.net/2022/03/12/rIbsR4SzXy2VJ9g.jpg"/></li>  
+         <li><img src="https://origami-book.com/user_data/images/upload/building/ll/20150502100848_308273375.jpg"/></li>  
+         <li><img src="https://www.gardeningeye.com/wp-content/uploads/2021/10/1635656025-Zaje%CC%A8cia-we-Wspo%CC%81lnym-Ogrodzie-z-Paulina%CC%A8-Jeziorek-foto-Katarzyna-Cudzilo.jpg"/></li>  
+        </ul>  
+       </div>  
+      </div> -->
+      <!-- <img src="https://s2.loli.net/2022/03/12/DxrFHIv3TEa7PUf.png" />
+    </div>
+    <div class="content">
+      <img style="height: 30em; width: auto;" src="https://s2.loli.net/2022/03/12/MoVEld6AzkvSHq2.jpg" />
+      <div style="margin: 5em; width: 23%;">
+        <ul style="font-size: 1.6em;">
+          <li>cultural intersection</li>
+          <li>transport intersection</li>
+          <li>urban connectivity</li>
+        </ul>
+      </div> -->
+    </div>
+
+    <div class="content">
+      <img style="height: 20em; width: auto;" src="https://s2.loli.net/2022/03/12/DxrFHIv3TEa7PUf.png" />
+      <div style="margin: 2em; width: 18%;">
+        <p style="font-weight:800; text-align: center;">Monterey Park</p>
+        <ul style="font-size: 1em;">
+          <li style="color: violet;">cultural intersection</li>
+          <li>transport intersection</li>
+          <li>urban connectivity</li>
+          <li style="color: yellow;">local business</li>
+          <li style="color: yellow">many parks</li>
+          <li style="color: violet;">asian demographic</li>
+          <li style="color: tomato;">asian tradition</li>
+          <li>high density</li>
+        </ul>
+      </div>
+      <div style="margin: 1em; width: 20%;">
+        <p style="font-weight:800">Service Network</p>
+        <ul style="font-size: 1em;">
+          <li style="color: yellow;">Semantic web</li>
+          <li>Interpreted information</li>
+          <li style="color: yellow;">Highly automated physical industry</li>
+        </ul>
+        <p style="font-weight:800">Motivated by Sparkles</p>
+        <ul style="font-size: 1em;">
+          <li>Standing on the shoulders of giant computers</li>
+          <li style="color: violet;">Value transition</li>
+          <li style="color: yellow;">Self awareness rejuvenation</li>
+        </ul>
+        <p style="font-weight:800">From Me to We</p>
+        <ul style="font-size: 1em;">
+          <li style="color: tomato;">Lead by example</li>
+          <li style="color: violet;">Owner attitude</li>
+          <li style="color: tomato;">Shared economy</li>
+        </ul>
+      </div>    
+    </div>
+
+
+
+
+
+
+
+    <div class="divider"></div>
+    <h2 class="title" style="height: 20%;">We probably say the future will be like ...</h2>
+    <div class="content">
+      <h3>
+        Community Co-living <br><br>
+        Emerging Dynamic Business <br><br>
+        Differentiated Pursuit of Value
+      </h3>
+    </div>
+
+
+
+
+
+
+
+    <div class="divider"></div>
+    <h2 class="title" style="height: 20%;">User Journey</h2>
+    <div class="content" style="margin-bottom: 5em;">
+      <img style="height: 30em; width: 31.5em; object-fit: cover;" src="https://s2.loli.net/2022/03/12/ZVXAkebcniGy1zL.png" />
+      <div style="margin: 3em; width: 25%;">
+        <h3>John</h3>
+        <ul style="font-size: 1.1em;">
+          <li>9 years old</li>
+          <li>Monterey Park resident</li>
+          <li>3 generation of immigrants</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content" style="margin-bottom: 5em; width: 100%;">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/uM2qAwJ7eFDZBYm.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/5joR79dPZgUOkeN.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/1RNHKy8IofVq75k.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/yQSN1CJx3itcrjs.png" alt="">
+    </div>
+    <div class="content" style="margin-bottom: 5em; width: 100%;">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/ZkRjQywhAJV3mNt.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/dW2yVc16ZYQK7Fz.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/Xd5Iq8NhuesD2FE.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/nQZoMxV3bOhXsBJ.png" alt="">
+    </div>
+    <div class="content" style="margin-bottom: 5em; width: 100%;">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/Y87N4aLKOAjvDSG.png" alt="">
+      <img class="storyboard" src="https://s2.loli.net/2022/03/12/Scg6pFUk5H2n4Pu.png" alt="">
+    </div>
+
+
+
+    <div class="divider"></div>
+    <div class="content">
+      <img style="margin-left: 5em;" src="https://s2.loli.net/2022/03/12/tfkb7AHdKMozBcQ.png" />
+    </div>
+      <div class="divider"></div>
+      <p style="font-size: 1.6em; text-align: left; margin-left: 10em;">
+        A Fabulous Solution would help anyone set off again. <br>
+        A Fabulous Solution would decrease barrier to start a second life. <br>
+        A Fabulous Solution would support local community business. <br>
+        A Fabulous Solution would encourage people to live motivated by sparkle. <br>
+      </p>
+
+   
+ 
+
+    <div class="divider"></div>
+    <h2 class="title">Design Brief</h2>
+    <div class="content">
+      <p style="font-size: 1.6em; text-align: center; margin: 0 10em 0 10em;">
+        In 2050s, people live in a more decentralized community. They don’t need to squeeze in a mega city to seek for a high quality life, work, education, service or pruchase. People are augmented to specialize in some fields and they have more free time to live by sparkles.  Everythings are more accessible in suburbs and towns. 
+        <br><br>
+        Design a transportation system which could help bringing mega city function to a suburb(Monterey Park).
+      </p>
+    </div>
+    <div class="content">
+      <img style="margin-top: 5em; height: 10em; width: auto;" src="https://s2.loli.net/2022/03/12/uoQ9eVL7RrFCb1A.png" />
+    </div>
+
+
+
+
+
+
+    <div class="divider"></div>
+    <h2 class="title">Key Insight</h2>
+    <div class="content">
+      <img style="margin-top: 2em; height: 30em; width: auto;" src="https://s2.loli.net/2022/03/12/gn1pu7wZHAOMtBc.png" />
+    </div>
+
+
+
+
+
+    <div class="divider"></div>
+
+    <h2 class="title" style="height: 10%;">3 Key Steps to support the Assumption</h2>
+    <div class="content">
+      <img style="height: 30em; width: auto;" src="https://s2.loli.net/2022/03/12/G7YwMSqmvBdUx6z.png" />
+      <div style="margin: 5em; width: 40%;">
+        <ol style="font-size: 1.6em;">
+          <li style="margin-bottom: 2em;">Decentralize the mega city, logistically and functionally</li>
+          <li style="margin-bottom: 2em;">Great IoV to support logistics system and transportation system to decrease mobile cost</li>
+          <li style="margin-bottom: 2em;">Transport system supporting local business</li>
+        </ol>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="divider"></div>
     <h2 class="subtitle">Mobile Unit</h2>
     <div class="spline">
       <iframe src='https://my.spline.design/animatedringscopy-51cb9939cd858f2063d7707183684493/' frameborder='0' width='80%' height='100%'></iframe>  
