@@ -15,7 +15,7 @@ jQuery(function($) {
 
     timeout = setTimeout(function() {
       scrollMenu.addClass('freeze');
-    }, 2000);
+    }, 5000);
   }
   scrollMenu.mouseover(menuFreeze);
 
@@ -42,13 +42,19 @@ jQuery(function($) {
     sectionListen();
   });
 
-  var count = 0;
+  // var count = 0;
 
   scrollItem.each(function() {
     var anchor = $(this).attr('id');
     var title = $(this).attr('title');
-    count++;
-    $('#section-menu ul').append('<li><a id="nav_' + title + '" href="#' + anchor + '"><span>' + count + '</span> ' + title + '</a></li>');
+    // count++;
+    // $('#section-menu ul').append('<li><a id="nav_' + title + '" href="#' + anchor + '"><span>' + count + '</span> ' + title + '</a></li>');
+    if ($(this).hasClass('scroll-item-sub')) {
+      $('#section-menu ul').append('<li><a class="section-menu-sub" id="nav_' + title + '" href="#' + anchor + '"><span>○</span><p>' + title +'</p></a></li>');
+    } else {
+      $('#section-menu ul').append('<li><a id="nav_' + title + '" href="#' + anchor + '"><span>●</span><p>' + title +'</p></a></li>');
+    }
+    ;
   });
 
   function menuListen() {

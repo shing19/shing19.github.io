@@ -4,6 +4,7 @@ html, body {
 	min-height: 100%;
 	font-family: 'Helvetica Neue', sans-serif;
   overflow-x: hidden;
+  color: rgb(50, 50, 50);
 }
 
 
@@ -16,7 +17,6 @@ h2 {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	color: #fff;
 }
 
 
@@ -37,21 +37,7 @@ h2 {
 	height: auto;
   padding: 33% 0;
 }
-#section-one {
-	background: #73d2e5;
-}
-#section-two {
-	background: #57b8d9;
-}
-#section-three {
-	background: #3d9ccc;
-}
-#section-four {
-	background: #2680bf;
-}
-#section-five {
-	background: #1262b2;
-}
+
 
 
 /* ==========================================================================
@@ -60,8 +46,8 @@ h2 {
 
 #section-menu {
 	position: fixed;
-	top: 50%;
-	right: 0;
+	top: 45%;
+	left: 0.5%;
 	z-index: 3000;
 	text-transform: uppercase;
 
@@ -69,7 +55,8 @@ h2 {
 	transition: all ease 0.1s;
 }
 #section-menu.freeze {
-	right: -112px;
+	/* left: -112px; */
+	left: 0;
 }
 .touch #section-menu {
 	display: none;
@@ -79,61 +66,48 @@ h2 {
 	padding: 0;
 	list-style: none;
 }
-#section-menu li {}
-#section-menu a {
-	float: right;
-	clear: both;
-
-	display: block;
-	height: 2em;
-	line-height: 2em;
+#section-menu li {
+  margin-bottom: 0.7em;
+}
+#section-menu li a {
 	text-decoration: none;
-	padding: 0 16px;
-	background: rgba(0,0,0,0.5);
-	color: #fff;
-	white-space: nowrap;
+  color: rgba(0, 0, 0, 0.2);
 
 	-webkit-transition: all ease 0.1s;
 	transition: all ease 0.1s;
 }
-#section-menu.freeze a {
-	float: none;
-	width: 128px;
+#section-menu li a span {
+  padding: 0 12px;
+  color: rgba(0, 0, 0, 0.2)
 }
-#section-menu a:hover,
-#section-menu a:focus {
-	background: rgba(0,0,0,0.75);
-	font-size: 1.2em;
+#section-menu li a p {
+  display: inline-block;
+  margin: 0;
+  visibility: visible;
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.4);
 }
-#section-menu a span {
-	display: none;
-	font-weight: 700;
-	position: relative;
-	width: 48px;
-	left: -16px;
-	text-align: center;
-	background: rgba(0,0,0,0.1);
+#section-menu a:hover{
+  color: blueviolet;
 }
-#section-menu a.active {
-	background: #000;
-	font-size: 1.4em;
-	font-weight: 700;
+#section-menu a.active, #section-menu a.active p, #section-menu a.active span {
+	font-size: 1em;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
 }
 #section-menu.freeze a span {
-	display: inline-block;
+  color: rgba(0, 0, 0, 0.2);
 }
-#section-menu a.active span {
-	display: inline-block;
-	background: #000;
+#section-menu.freeze a p {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0s, opacity 0.5s linear;
 }
-#section-menu a.active span:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	background: rgba(255,255,255,0.25);
+#section-menu.freeze a.active span {
+  color: black;
+  font-weight: bold;
 }
-#section-menu.freeze a.active span:before {
-	display: none;
+.section-menu-sub span {
+  margin-left: 0.5em;
 }
