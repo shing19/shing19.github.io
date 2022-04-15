@@ -15,7 +15,7 @@ jQuery(function($) {
 
     timeout = setTimeout(function() {
       scrollMenu.addClass('freeze');
-    }, 5000);
+    }, 1000);
   }
   scrollMenu.mouseover(menuFreeze);
 
@@ -59,7 +59,8 @@ jQuery(function($) {
 
   function menuListen() {
     var pos = $(this).scrollTop();
-    pos = pos + viewportHeight * 0.625;
+    // pos = pos + viewportHeight * 0.625;
+    pos = pos + viewportHeight * 0.525;
     for (i in sectionsHeight) {
       if (sectionsHeight[i] < pos) {
         $('#section-menu a').removeClass('active');
