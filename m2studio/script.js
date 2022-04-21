@@ -101,7 +101,10 @@ jQuery(function($) {
 
   function scrollHandler() {
     menuListen();
-    menuFreeze();
+    // 这个是滚动就显示nav bar
+    // menuFreeze();
+    // 这个是滚动但不激活nav bar，只有hover才激活
+    scrollMenu.addClass('freeze');
   }
   scrollHandler();
   viewport.on('scroll', function() {

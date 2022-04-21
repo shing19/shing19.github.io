@@ -31,15 +31,49 @@ h3 {
 	padding: 10% 0;
 }
 
+/* subtitle */
 
-p {
-  font-size: 1.4em;
-	line-height: 1.4em;
+h4 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  text-transform: capitalize;
+}
+
+/* topic for each part */
+/* 默认靠左，居中去下面自己调 */
+h5 {
+  font-size: 1.6em;
+  text-align: left;
+  margin: 1% 0;
 }
 
 
-.inner {
-	text-align: center;
+/* 默认靠左，居中去下面自己调 */
+p {
+  font-size: 1.4em;
+	line-height: 1.4em;
+  text-align: left;
+}
+li {
+  text-align: left;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+a {
+  text-decoration: none;
+  color: lightseagreen;
+}
+a:visited {
+  color: darkslategray;
+}
+a:hover {
+  color: orange;
 }
 
 
@@ -53,7 +87,7 @@ p {
 	box-sizing: border-box;
 	
 	height: auto;
-  padding: 10% 0;
+  padding: 10% 10%;
 }
 
 
@@ -83,6 +117,7 @@ p {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+  float: left;
 }
 #section-menu li {
   margin-bottom: 0.7em;
@@ -130,30 +165,63 @@ p {
 }
 
 
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+
+.inner {
+	text-align: center;
+}
+
+
+
 /* cover-page */
 #cover-page {
 	font-weight: 150;
   letter-spacing: .05em;
 	text-align: center;
-	padding: 14% 0;
+	padding: 17% 0;
 }
-
 #cover-page h1 {
 	text-transform: uppercase;
 }
+#cover-page p {
+	text-align: center;
+}
 
-/* #cover-page .content {
-  padding: 5% 0;
-} */
+
+.page {
+  padding: 8% 0;
+}
+.page li {
+  font-size: 1.2em;
+}
+
+
+.reference-note {
+  font-size: 0.6em;
+  clear: both;
+}
+.reference-note p {
+  margin: 0.4em 0;
+}
+
 
 .spline {
-  width: 100%;
-  height: 40em;
-  box-sizing: content-box;
+  padding: 0;
+  margin-left: -10%;
+  width: 100vw;
+  height: 47em;
+  /* box-sizing: content-box;
   display: flex;
   justify-items: center;
-  align-items: center;
-  margin: 0 auto;
+  align-items: center; */
+}
+
+
+.cutpage {
+  height: 50vh;
 }
 
 
@@ -196,5 +264,179 @@ p {
 }
 
 .reference {
+  /* list-style: none; */
+  text-align: left;
+}
+
+/* auto gallery */
+.gallery {
+  height: max-content;
+}
+
+.container{
+  margin: 3% auto;
+	margin-bottom: 8%;
+	width: 224px;
+	height: auto;
+	position: relative;
+	perspective: 4000px;
+}
+
+#carousel:nth-child(1){
+  margin-bottom: 10px;
+	width: 100%;
+	height: 116px;
+	transform-style: preserve-3d;
+	animation: rotation 200s infinite linear alternate ;
+}
+#carousel:nth-child(2){
+  margin-bottom: 10px;
+	width: 100%;
+	height: 116px;
+	transform-style: preserve-3d;
+	animation: rotation 200s infinite ease-out  alternate ;
+}
+#carousel:nth-child(3){
+	width: 100%;
+	height: 116px;
+	transform-style: preserve-3d;
+	animation: rotation 200s infinite linear alternate ;
+}
+
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 95%;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	/* border: solid 5px black; */
+  backface-visibility: hidden
+}
+
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(635px);}
+#carousel figure:nth-child(2) { transform: rotateY(20deg) translateZ(635px);}
+#carousel figure:nth-child(3) { transform: rotateY(40deg) translateZ(635px);}
+#carousel figure:nth-child(4) { transform: rotateY(60deg) translateZ(635px);}
+#carousel figure:nth-child(5) { transform: rotateY(80deg) translateZ(635px);}
+#carousel figure:nth-child(6) { transform: rotateY(100deg) translateZ(635px);}
+#carousel figure:nth-child(7) { transform: rotateY(120deg) translateZ(635px);}
+#carousel figure:nth-child(8) { transform: rotateY(140deg) translateZ(635px);}
+#carousel figure:nth-child(9) { transform: rotateY(160deg) translateZ(635px);}
+#carousel figure:nth-child(10){transform: rotateY(180deg) translateZ(635px);}
+#carousel figure:nth-child(11) { transform: rotateY(200deg) translateZ(635px);}
+#carousel figure:nth-child(12) { transform: rotateY(220deg) translateZ(635px);}
+#carousel figure:nth-child(13) { transform: rotateY(240deg) translateZ(635px);}
+#carousel figure:nth-child(14) { transform: rotateY(260deg) translateZ(635px);}
+#carousel figure:nth-child(15) { transform: rotateY(280deg) translateZ(635px);}
+#carousel figure:nth-child(16) { transform: rotateY(300deg) translateZ(635px);}
+#carousel figure:nth-child(17) { transform: rotateY(320deg) translateZ(635px);}
+#carousel figure:nth-child(18) { transform: rotateY(340deg) translateZ(635px);}
+
+#carousel figure img{
+  width: 100%;
+	/* -webkit-filter: grayscale(1); */
+	cursor: pointer;
+	transition: all .5s ease;
+}
+#carousel figure img:hover{
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+
+
+/* ==========================================================================
+   image + text box
+   ========================================================================== */
+
+/* img1：一张图+一行字，并列分布 */
+
+.img1 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.img1 div {
+  display: grid;
+  place-items: center;
+}
+
+.img1 .keyimg {
+  grid-column: 1 / 4;
+}
+
+.img1 img {
+  width: 100%;
+  height: auto;
+}
+
+.align-list {
   list-style: none;
+  display: inline-block;
+}
+.align-list li {
+  font-size: 1.1em;
+  padding: 0.4em 0;
+}
+
+.keyword {
+  font-size: 1em;
+  color: darkviolet;
+  list-style: none; 
+  text-transform: capitalize;
+}
+.keyword li {
+  display: inline;
+  margin: 0 10px;
+  padding: 3px 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgb(173, 173, 173);
+  border-radius: 5px 5px;
+}
+
+.punchline {
+  margin-top: 2em;
+  font-size: 1.5em;
+  color: darkviolet;
+  list-style: none; 
+}
+.punchline li {
+  margin: 0.5em 8em;
+  padding: 1em 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgb(173, 173, 173);
+  border-radius: 5px 5px;
+}
+
+
+.img2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.sameheight {
+  height: max-content;
+}
+.sameheight img {
+  vertical-align: top;
+  display: inline;
 }
